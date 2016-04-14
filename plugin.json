@@ -1,30 +1,29 @@
 {
-  "id": "grafana-kairosdb-datasource",
-  "name": "KairosDB",
+  "name": "Open-Falcon",
+  "id": "grafana-open-falcon",
   "type": "datasource",
-
-  "metrics": true,
-  "annotations": false,
 
   "staticRoot": ".",
 
+  "partials": {
+    "config": "partials/config.html"
+  },
+
+  "metrics": true,
+  "annotations": true,
+
   "info": {
-    "description": "datasource plugin for KairosDB",
+    "description": "Datasource plugin for Open-Falcon",
     "author": {
-      "name": "Raintank Inc.",
-      "url": "http://raintank.io"
-    },
-    "keywords": ["kairosdb", "cassandra"],
-    "logos": {
-      "small": "img/kairosdb_logo_small.png",
-      "large": "img/kairosdb_logo_large.png"
+      "name": "Kordan Ou",
+      "url": "https://github.com/hitripod"
     },
     "links": [
-      {"name": "GitHub", "url": "https://github.com/grafana/kairosdb-datasource"},
-      {"name": "License", "url": "https://github.com/grafana/kairosdb-datasource/blob/master/LICENSE"}
+      {"name": "GitHub", "url": "https://github.com/glasslion/grafana-open-falcon"},
+      {"name": "Apache License 2.0", "url": "https://github.com/glasslion/grafana-open-falcon/blob/master/LICENSE"}
     ],
-    "version": "1.0.0",
-    "updated": "2016-02-10"
+    "version": "0.1.0",
+    "updated": "2016-04-13"
   },
 
   "dependencies": {
