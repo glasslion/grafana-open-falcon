@@ -1,7 +1,5 @@
-define([
-  'lodash'
-], function(_) {
-  'use strict';
+import _ from 'lodash';
+  
 
   // This is auto generated from the unicode tables.
   // The tables are at:
@@ -677,6 +675,7 @@ define([
 
   };
 
-  return Lexer;
+  export default Lexer;
 
-});
+
+

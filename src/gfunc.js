@@ -1,9 +1,6 @@
-define([
-  'lodash',
-  'jquery'
-],
-function (_, $) {
-  'use strict';
+import _ from 'lodash';
+import $ from 'jquery';
+  
 
   var index = [];
   var categories = {
@@ -713,7 +710,7 @@ function (_, $) {
     this.text = text;
   };
 
-  return {
+  export default {
     createFuncInstance: function(funcDef, options) {
       if (_.isString(funcDef)) {
         if (!index[funcDef]) {
@@ -733,4 +730,5 @@ function (_, $) {
     }
   };
 
-});
+
+

@@ -1,7 +1,5 @@
-define([
-  './lexer'
-], function (Lexer) {
-  'use strict';
+import Lexer from './lexer';
+  
 
   function Parser(expression) {
     this.expression = expression;
@@ -261,5 +259,6 @@ define([
 
   };
 
-  return Parser;
-});
+  export default Parser;
+
+

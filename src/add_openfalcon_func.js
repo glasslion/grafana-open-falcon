@@ -1,11 +1,8 @@
-define([
-  'angular',
-  'lodash',
-  'jquery',
-  './gfunc',
-],
-function (angular, _, $, gfunc) {
-  'use strict';
+import angular from 'angular';
+import _ from 'lodash';
+import $ from 'jquery';
+import gfunc from './gfunc';
+  
 
   angular
     .module('grafana.directives')
@@ -104,4 +101,5 @@ function (angular, _, $, gfunc) {
       };
     });
   }
-});
+
+

@@ -1,15 +1,12 @@
-define([
-  'angular',
-  'lodash',
-  'jquery',
-  'app/core/config',
-  'app/core/utils/datemath',
-  './query_ctrl',
-  './func_editor',
-  './add_openfalcon_func',
-],
-function (angular, _, $, config, dateMath) {
-  'use strict';
+import angular from 'angular';
+import _ from 'lodash';
+import $ from 'jquery';
+import config from 'app/core/config';
+import dateMath from 'app/core/utils/datemath';
+import './query_ctrl';
+import './func_editor';
+import './add_openfalcon_func';
+  
 
   /** @ngInject */
   function OpenFalconDatasource(instanceSettings, $q, backendSrv, templateSrv) {
@@ -316,5 +313,6 @@ function (angular, _, $, config, dateMath) {
     };
   }
 
-  return OpenFalconDatasource;
-});
+  export default OpenFalconDatasource;
+
+
