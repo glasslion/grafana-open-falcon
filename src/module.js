@@ -1,5 +1,5 @@
 import OpenFalconDatasource from './datasource';
-import OpenFalconQueryCtrl from './query_ctrl';
+import {OpenFalconQueryCtrl} from './query_ctrl';
 
 class OpenFalconConfigCtrl {}
 OpenFalconConfigCtrl.templateUrl = 'partials/config.html';
