@@ -1,9 +1,0 @@
-{
-  "name": "OpenFalcon",
-  "type": "datasource",
-  "id": "openfalcon",
-
-  "defaultMatchFormat": "glob",
-  "metrics": true,
-  "annotations": true
-}
